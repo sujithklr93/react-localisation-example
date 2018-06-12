@@ -6,5 +6,3 @@ const it  = {
 }
 
 export default it
-
-// json data for italien

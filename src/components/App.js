@@ -11,6 +11,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-/// this is our app component after loading index it will trigger

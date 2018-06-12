@@ -1,29 +1,27 @@
+//localization component ...
 import React, { Component } from 'react';
-//imported our localization package
+//imported library
 import LocalizedStrings from 'react-localization';
-// json formated data for translation
-// for english
+//imported lang JSON
+//we can check lang JSON
 import  en  from '../static/lang/en.js';
-//for italien
 import it  from '../static/lang/it.js';
-
-// integrted our language data into translation plugin
-let strings = new LocalizedStrings({en,it});
+//here we created instance od library
+const  strings = new LocalizedStrings({en,it});
 
 class LocalizationComponent extends Component {
   constructor(props) {
     super(props);
+    //set default language
+    //it's only sample App
+    //based on you needs you can use state or redux-store
     strings.setLanguage('it');
   }
-  // here we called our translation part ....
-  // we can simply call like this
-  // this package is available in react native also
   render() {
-     // here we setted our language ... you can set any where you want ... but my pref ids please add this thing into component life cycle nethods
     return (
       <div>
-          here our localization component
             {strings.how}
+
       </div>
     );
   }
@@ -31,6 +29,3 @@ class LocalizationComponent extends Component {
 }
 
 export default LocalizationComponent;
-
-// it is our localisation compionent
-// we already installed required packages

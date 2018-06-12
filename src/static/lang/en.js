@@ -6,6 +6,3 @@ const en = {
 }
 
   export default en
-
-
-//above our json data for english
