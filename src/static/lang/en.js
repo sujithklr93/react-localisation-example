@@ -6,3 +6,5 @@ const en = {
 }
 
   export default en
+//english lang files
+//includes key and value 

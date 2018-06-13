@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+//localization component ...
 import LocalizationComponent  from './testLocalization.component';
 class App extends Component {
   render() {
@@ -11,3 +12,4 @@ class App extends Component {
 }
 
 export default App;
+//app component ...
